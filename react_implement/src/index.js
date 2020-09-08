@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//!  React를 만들자 (어떻게 돌아가는지 이해되게끔)
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const list = [
+    { title: 'React에 대해 알아봅시다.' },
+    { title: 'Redux에 대해 알아봅시다.' },
+    { title: 'TypeScript에 대해 알아봅시다.' },
+]
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const rootElement = document.getElementById("root");
+
+function app() {
+    rootElement.innerHTML = `
+        <ul>
+            ${list.map(item => `<li>${item.title}</li>`).join("")}
+        </ul>
+    `;
+}
