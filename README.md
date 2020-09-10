@@ -4,4 +4,4 @@
 
 ## 1 weeks : javascript tutorial & redux implement.
 
-## 2 weeks : react implement
+## 2 weeks : react implement & component design, asynchronous
