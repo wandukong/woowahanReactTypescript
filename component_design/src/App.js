@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+const SessionItem = ({ title }) => <li>{title}</li>;
+
+const App = (props) => {
+  const [displayOrder, toggleDisplayOrder] = React.useState("ASC");
+  const { sessionList } = props.store;
+  const orderedSessionList = sessionList.map((session, i) => ({
+    ...session,
+    order: i
+  }));
+
+  const onToggleDisplayOrder = () => {
+    toggleDisplayOrder(displayOrder === "ASC" ? "DESC" : "ASC");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>React and TypeScript</h1>
       </header>
+      <p>전체 세션 갯수: 4개 {displayOrder}</p>
+      <button onClick={onToggleDisplayOrder}>재정렬</button>
+      <ul>
+        {orderedSessionList.map((session) => (
+          <SessionItem title={session.title} />
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default App;
