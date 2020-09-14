@@ -19,7 +19,9 @@ function reducer(state = {}, action) { // state = {} : count 없을 때를 대�
     }
 }
 
-function update() { // 바꼈다고 통지해주는 함수 
+
+
+function update() { // 바꼈다고 통지해주는 함수  (publish)
     console.log(store.getState())
 }
 
@@ -40,7 +42,12 @@ function reset(n) {
 
 
 const store = createStore(reducer);
+
+// 객체가 변경됨 -> 변경된걸 알고싶으면, 구독(subscribe)하면 
+// 구독한 함수를 호출해서 변경될 때마다 알려줄게(publish)
 store.subscribe(update);
+
+
 increment();
 increment();
 increment();
