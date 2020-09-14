@@ -4,14 +4,16 @@ const list = [
     { title: 'React에 대해 알아봅시다.' },
     { title: 'Redux에 대해 알아봅시다.' },
     { title: 'TypeScript에 대해 알아봅시다.' },
-]
+];
 
 const rootElement = document.getElementById("root");
 
-function app() {
+function app(items) {
     rootElement.innerHTML = `
         <ul>
-            ${list.map(item => `<li>${item.title}</li>`).join("")}
+            ${items.map((item) => `<li>${item.title}</li>`).join("")}
         </ul>
     `;
 }
+
+app(list);
