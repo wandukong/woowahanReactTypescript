@@ -2,6 +2,10 @@
 
 <img src="https://user-images.githubusercontent.com/47289479/92158345-b7720800-ee66-11ea-9874-8ae9a4dc7430.jpeg"  width="400" height="600">
 
-## 1 weeks : javascript tutorial & redux implement.
+## 1회차 : OT
 
-## 2 weeks : react implement & component design, asynchronous
+## 2회차 : javascript tutorial & redux implement.
+
+## 3회차 : react implement & Hooks 개요
+
+## 4회차 : component design & asynchronous
