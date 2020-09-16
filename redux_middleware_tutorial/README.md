@@ -1,7 +1,7 @@
-## 우아한 테크러닝 React&Typescript 5회차 (2020.09.15) - Redux_middleware
+## 우아한 테크러닝 React&Typescript 5회차 (2020.09.15) - redux middleware
 
 
-### Redux_middleware
+### redux middleware
 
 ```javascript
 function reducer(state = { count: 0 }, action) {
@@ -49,7 +49,7 @@ console.log(add2(10)(20)); //30
 
 <hr />
 
-### redux_middleware
+### redux middleware
 
 side effect가 있는 비동기적인 작업은 리듀서 밖에서 해야하는 환경을 제공한다.  
 흘러가는 데이터는 모든 미들웨어를 꽂힌 순서대로 흐른다. (순서에 dependency가 있다.)  
