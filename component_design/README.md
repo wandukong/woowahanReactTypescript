@@ -1,4 +1,4 @@
-## 우아한 테크러닝 React&Typescript 3회차 (2020.09.10) - Component & Generator와 Async
+## 우아한 테크러닝 React&Typescript 4회차 (2020.09.10) - Component & Generator와 Async
 
 ### Generator와 Async
 

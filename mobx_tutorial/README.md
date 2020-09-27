@@ -80,7 +80,7 @@ class Cart {
   };
 }
 ```
-action()도 @action으로 대체할 수 있다.  
+action()도 **@action**으로 대체할 수 있다.  
 ```javascript
 cart.myAction();
 ```
