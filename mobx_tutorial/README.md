@@ -25,7 +25,7 @@ observable로 등록한 객체들만 추적한다.
 const weight = observable.box(82);
 ```
 observabl은 primitive type들을 감싸주지 못한다.  
-__observable.box()__를 사용하여 감싼다.  
+**observable.box()** 를 사용하여 감싼다.  
 
 
 ```javascrip
@@ -50,7 +50,7 @@ const myAction = action(() => {
   weight.set(weight.get() - 1);
 });
 ```  
-그래서, __action()__이라는 논리적인 작업 단위를 묶어주는 helper를 제공한다.    
+그래서, **action()** 이라는 논리적인 작업 단위를 묶어주는 helper를 제공한다.    
 (redux의 dispatch+reducer의 방식과 비슷하다)   
 
 <hr />
