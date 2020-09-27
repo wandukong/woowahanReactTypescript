@@ -12,6 +12,8 @@
 
 ## 5회차 : redux middleware
 
-## 6회차 : webpack
+## 6회차 : webpack + typescript 예제
 
-## 6~8회차 : react + typescript 예제
+## 7회차 : typescript 예제
+
+## 8회차 : typescript 예제 + Mobx
